@@ -4,8 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  
   font-weight: 500;
+  font-family:Circular, Helvetica;
 }
 
 .nav {
@@ -60,4 +61,223 @@
   border: 1px solid #1F78D1;
   border-radius: 3px;
   color: #1F78D1;
+}
+
+/* Registration page design */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.registration-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; 
+  width: 100%; 
+}
+
+.registration-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.registration-form label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold; /* Corrected typo */
+}
+
+.registration-form input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.registration-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2861a7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; /* Occupy full width */
+}
+
+.registration-form button:hover {
+  background-color: #218838;
+}
+
+
+@media screen and (max-width: 480px) {
+  .form-container {
+    max-width: 300px;
+  }
+}
+
+/* Host Hackathon page */
+
+.hack-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+ 
+}
+
+.hackathon-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.hackathon-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.hack-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2861a7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hack-button:hover {
+  background-color: #218838;
+}
+
+
+/* Footer Design */
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #EDF1F2;
+  color: #000;
+  padding: 20px;
+  text-align: left;
+
+}
+
+.footer-column {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+  box-sizing: border-box;
+  margin: 4rem;
+}
+
+.footer-column h4 {
+ 
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column ul li {
+  padding: 10px 0; 
+  margin: 2px 0;  
+  align-items: center;
+}
+
+.footer-column ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 0.1rem solid #444;
+  padding-top: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-bottom p {
+  margin: 0.5rem 0;
+}
+
+.footer-bottom-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-links li {
+  margin: 0.5rem;
+}
+
+.footer-bottom-links li a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer-bottom-links li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-column {
+    min-width: 100%;
+  }
 }
